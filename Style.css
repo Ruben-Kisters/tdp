@@ -1,0 +1,292 @@
+/* ===================================
+   BASISINSTELLINGEN
+=================================== */
+
+/* Nog even toelicht:
+   Hier stel je de standaardfonts in.
+   Hermeneus One is decoratief (voor koppen),
+   Heebo is modern en leesbaar (voor tekst),
+   Happy Monkey kun je voor lichte accenten gebruiken. */
+
+:root {
+    --font-header: 'Hermeneus One', sans-serif;
+    --font-body: 'Heebo', sans-serif;
+    --font-accent: 'Happy Monkey', cursive;
+    --main-color: #FFC491;
+    --highlight: #D33A3A;
+    --purple: #8070FB;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    color: #000;
+}
+
+/* ===================================
+   ALGEMENE STRUCTUUR
+=================================== */
+
+header {
+    background-color: var(--main-color);
+    height: 80px;
+    width: 100%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: var(--font-header);
+    font-size: 96px;
+    margin: 0;
+}
+
+h2, h3 {
+    font-family: var(--font-body);
+    margin: 0;
+}
+
+p {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* ===================================
+   BORDERS (onaangeroerd)
+=================================== */
+
+.BorderH,
+.BorderH1,
+.BorderH2,
+.BorderH3,
+.BorderH4,
+.BorderH5 {
+    background: var(--main-color);
+    height: 45px;
+    width: 100%;
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.Hero {
+    position: relative;
+    text-align: center;
+}
+
+.Hero h1 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #9DB9FF;
+    font-size: 48px;
+    width: 80%;
+    font-family: var(--font-header);
+}
+
+/* ===================================
+   EIGEN ONDERZOEK
+=================================== */
+
+.eigenOZ {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 5%;
+}
+
+.eigenOZ h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.eigenOZ .content-row {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    padding: 0 8%;
+}
+
+.eigenOZ .content-row p {
+    flex: 1;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.eigenOZ .content-row img {
+    flex: 1;
+    max-width: 45%;
+    object-fit: cover;
+}
+
+.eigenOZ .content-row.reverse {
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 100px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: space-between;
+}
+
+.eigenOZ h1 {
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.eigenOZ p {
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+.w{
+padding-left: 575px;
+text-align: center;
+}
+
+.im{
+    display: block;
+    margin-left:600px ;
+    width:550px;
+    height:735px ;
+}
+
+.imq{
+    width:529px ;
+    height: 393px;
+}
+/* ===================================
+   FEATURED ARTICLE
+=================================== */
+
+.FeaturedArt {
+    background: var(--purple);
+    color: white;
+    text-align: center;
+    padding: 120px 10%;
+}
+
+.FeaturedArt h1 {
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+.FeaturedArt h2 {
+    font-size: 48px;
+}
+
+/* ===================================
+   SIGN-UP
+=================================== */
+
+.SignUp {
+    background: var(--main-color);
+    text-align: left;
+    padding: 100px 15%;
+}
+
+.SignUp h1 {
+    font-size: 96px;
+    margin-bottom: 20px;
+}
+
+.SignUp h2 {
+    font-size: 24px;
+}
+
+/* ===================================
+   INTERVIEWS
+=================================== */
+
+.InterviewGB,
+.InterviewEX {
+    padding: 100px 15%;
+}
+
+.InterviewGB h1,
+.InterviewEX h1 {
+    color: var(--highlight);
+    font-size: 96px;
+    margin-bottom: 40px;
+}
+
+.InterviewGB p,
+.InterviewEX p {
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+/* ===================================
+   CONCLUSIE
+=================================== */
+
+.Conclusie {
+    padding: 100px 15%;
+}
+
+.Conclusie h1 {
+    margin-bottom: 40px;
+}
+
+/* ===================================
+   VISIE / GROEPSACTIVITEITEN
+=================================== */
+
+.VGA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 10%;
+    gap: 40px;
+}
+
+.VGA div {
+    flex: 1 1 30%;
+    min-width: 280px;
+}
+
+.VGA h1 {
+    font-size: 40px;
+    color: var(--highlight);
+}
+
+.VGA p {
+    font-size: 18px;
+}
+
+/* ===================================
+   BRONNEN
+=================================== */
+
+.Bronnen {
+    padding: 80px 15%;
+    background: #FFC491;
+}
+
+.Bronnen h2 {
+    font-family: var(--font-header);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.Bronnen p {
+    font-size: 16px;
+    line-height: 1.5;
+}
